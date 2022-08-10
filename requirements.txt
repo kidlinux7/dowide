@@ -71,7 +71,7 @@ prompt-toolkit==3.0.18
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
-PyJWT==2.1.0
+
 pyOpenSSL==20.0.1
 Pyphen==0.10.0
 python-dotenv==0.17.0

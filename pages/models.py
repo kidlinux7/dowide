@@ -78,7 +78,7 @@ class House(models.Model):
     street_name = models.CharField(max_length=100,null=False,blank=False)
     house_number = models.PositiveIntegerField(default=0,null=False,blank=False)
     google_map = models.CharField(max_length=100,null=False,blank=False)
-    ametuer = models.CharField(max_length=100,null=False,blank=False)
+    amenities = models.TextField(null=False,blank=False)
     date_created = models.DateTimeField(auto_now=True)
 
     def __str__(self):
