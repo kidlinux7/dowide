@@ -3,7 +3,6 @@ asgiref==3.5.2
 attrs==21.2.0
 autobahn==21.3.1
 Automat==20.2.0
-backports.zoneinfo==0.2.1
 beautifulsoup4==4.9.3
 billiard==3.6.4.0
 bootstrap4==0.1.0
