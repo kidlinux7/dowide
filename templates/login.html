@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{%block content%}
+
+    <div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="row align-center" id="insertion">
+                <div class="col-xl-6 col-lg-6 col-md-12 col-xs-12 col-sm-12">
+                    <div style="font-weight: 1000;color:black;font-size:2em;margin-top: 20vh;text-align:left;" id="tag">
+                   <div class="d-flex justify-content-center">
+                    <img src ="{% static '/images/tempo.png' %}" style="align-items: center;" height="300px" width="300px"><br>
+                   </div>
+                     
+                        <span style="color:orange;">Login</span>
+                        {% for message in messages %}
+                        <h4 style="color: red;">{{message}}</h4>
+                        {% endfor %}
+                    </div>
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <input type="text" placeholder="username" class="form-control" name="username"><br>
+                        <input type="password" placeholder="password" class="form-control" name="password"><br>
+                        <!-- {{ form | crispy }} -->
+                        <!--Submission button-->
+                        <input class="btn btn-danger btn-block" type="submit" name="Login" value="Login">
+                    </form>
+                    <h6>Don't have an account? <a href="{% url 'register'%}">Create one here</a></h6>
+                </div>
+    
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+{% endblock %}
